@@ -48,7 +48,11 @@ nav ul li:hover {
   cursor: pointer;
   background-color: #ad88c6;
   border-radius: 5px;
-  color: #fff;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
 }
 
 .home {
