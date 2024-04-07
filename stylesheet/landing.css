@@ -7,11 +7,21 @@
   font-style: normal;
 }
 
+body {
+}
+
+button {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
 nav {
   display: flex;
-  justify-content: space-around;
-  gap: 40px;
+  justify-content: space-evenly;
   align-items: center;
+  position: fixed;
+  width: 100vw;
+  background: #fff;
 }
 
 nav .logo {
@@ -43,15 +53,12 @@ nav ul li:hover {
 .buttons button {
   width: fit-content;
   padding: 5px 10px;
-  border: none;
+  border: 1px solid black;
   outline: none;
   cursor: pointer;
-  background-color: #ad88c6;
-  border-radius: 5px;
 
   a {
     text-decoration: none;
-    color: #fff;
   }
 }
 
@@ -64,4 +71,57 @@ nav ul li:hover {
 
 .home-left {
   font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.home a {
+  text-decoration: none;
+  color: black;
+}
+
+.explore-btn {
+  width: fit-content;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+/* collection section */
+
+.collections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.collection {
+  width: 250px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.collection img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  position: relative;
+}
+
+.collection img::after {
+  content: "";
+  width: 100%;
+  background: #893cbc;
+  height: 30px;
+  position: absolute;
 }

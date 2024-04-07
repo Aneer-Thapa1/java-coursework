@@ -14,18 +14,42 @@ body {
   height: 100vh;
 }
 
-.login-container {
-  padding: 10px;
+.circle {
+  position: relative;
+  top: 0;
+  width: 500px;
+  height: 500px;
+  border: 40px solid RED;
+  background-color: aqua;
+}
 
+.login-container {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
 }
 
 .login-container img {
   height: 450px;
   width: 350px;
+  border-radius: 8px;
+  /* border: 2px solid #ccc;
+  border-right: none; */
+}
+
+@keyframes move {
+  0% {
+    left: -200px;
+    transform: scale(0.5);
+  } /* Initial position and size */
+  100% {
+    left: calc(100% + 200px);
+    transform: scale(1.5);
+  } /* Final position and size */
 }
 
 .login-form {
@@ -34,13 +58,25 @@ body {
   gap: 30px;
   justify-content: center;
   align-items: center;
+  border-left: 2px solid #ccc;
+  height: 450px;
+  width: 350px;
 }
 
 .login-form input {
   width: 250px;
-  height: 30px;
-  padding: 10px;
-  border-radius: 3px;
+  height: 40px;
+  padding-left: 15px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  border-bottom-width: 3px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.login-form input:focus {
+  border-color: red;
 }
 
 .forgot {
@@ -55,14 +91,10 @@ body {
   background-color: aquamarine;
   border: none;
   outline: none;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+
   cursor: pointer;
   transition: all ease 0.2s;
 }
 
 .login-btn:hover {
-  border: none;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
 }
