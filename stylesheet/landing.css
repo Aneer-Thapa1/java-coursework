@@ -73,17 +73,43 @@ nav ul li a:hover::after {
 }
 
 .buttons button {
-  width: fit-content;
-  padding: 5px 15px;
-  border: 1px solid black;
-  outline: none;
-  cursor: pointer;
-  color: #fff;
-  background-color: black;
-  border-radius: 8px;
+  position: relative;
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  overflow: hidden;
 
   a {
     text-decoration: none;
+    color: #000;
+  }
+}
+
+.buttons button::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #000;
+  left: 0;
+  top: 0;
+  transition: width 0.5s ease; /* Only transition width property */
+  z-index: -1;
+}
+
+.buttons button:hover::before {
+  width: 100%;
+}
+
+.buttons button:hover {
+  border: none;
+
+  a {
     color: #fff;
   }
 }
@@ -145,6 +171,7 @@ nav ul li a:hover::after {
 .title {
   font-size: 3rem;
   text-align: center;
+  /* margin-top: 50px; */
 }
 
 /* collection section */
@@ -187,6 +214,7 @@ nav ul li a:hover::after {
   color: #fff;
   border: none;
   display: flex;
+  padding: 10px 15px;
   gap: 10px;
   justify-content: center;
   align-items: center;
@@ -195,6 +223,9 @@ nav ul li a:hover::after {
 .about {
   height: 100vh;
   margin-top: 150px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
 }
 
 .more-div {
@@ -214,4 +245,29 @@ nav ul li a:hover::after {
   border: none;
   padding: 5px 20px;
   font-size: 14px;
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upper {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  width: 3px;
+  height: 60px;
+  background-color: black;
 }
