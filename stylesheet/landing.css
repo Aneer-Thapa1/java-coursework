@@ -28,8 +28,8 @@ nav {
 }
 
 nav .logo {
-  width: 80px;
-  height: 60px;
+  width: 160px;
+  height: 50px;
 }
 
 nav ul {
@@ -81,7 +81,6 @@ nav ul li a:hover::after {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   overflow: hidden;
 
   a {
@@ -104,6 +103,7 @@ nav ul li a:hover::after {
 
 .buttons button:hover::before {
   width: 100%;
+  border: 2px solid #000;
 }
 
 .buttons button:hover {
@@ -191,7 +191,7 @@ nav ul li a:hover::after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #c2f4f449;
+  background-color: #60606034;
   padding: 10px;
 }
 
@@ -221,7 +221,7 @@ nav ul li a:hover::after {
 }
 
 .about {
-  height: 100vh;
+  height: 80vh;
   margin-top: 150px;
   display: flex;
   gap: 50px;
@@ -240,11 +240,14 @@ nav ul li a:hover::after {
 }
 
 .see-more {
-  background-color: black;
+  background: #000;
   color: #fff;
+  width: fit-content;
+  margin: auto;
   border: none;
-  padding: 5px 20px;
-  font-size: 14px;
+  outline: none;
+  font-size: 15px;
+  padding: 7px 20px;
 }
 
 .about-left {
@@ -270,4 +273,67 @@ nav ul li a:hover::after {
   width: 3px;
   height: 60px;
   background-color: black;
+}
+
+.contact {
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact img {
+  width: 600px;
+  height: 600px;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-us p {
+  font-weight: bold;
+}
+
+.name {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-us input {
+  height: 30px;
+  padding-left: 10px;
+  border: 1px solid #000;
+}
+
+textarea {
+  padding: 10px;
+  resize: none;
+  height: 180px;
+  border: 1px solid #000;
+}
+
+.contact-btn {
+  background: #000;
+  color: #fff;
+  width: fit-content;
+  margin: auto;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 7px 20px;
+}
+
+footer {
+  margin-top: 50px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer img {
+  width: 150px;
+  height: 60px;
 }
