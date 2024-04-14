@@ -8,31 +8,66 @@
 }
 
 nav {
-  height: 100px;
-  background: red;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  width: 100vw;
+  background: transparent;
+  z-index: 99;
+  align-items: center;
+}
+
+.transparent {
+  background-color: rgba(245, 245, 245, 0.196);
+}
+
+.white {
+  background-color: white;
+}
+
+nav .logo img {
+  width: 150px;
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.shortcuts {
+  display: flex;
+  gap: 20px;
 }
 
 .video-container {
   position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Hide overflowing content */
 }
 
-.video-container::before {
-  content: "";
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire container */
+}
+
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 80%; /* Adjust the height of the overlay */
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Adjust the color and opacity of the overlay */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
 }
 
-.video-container video {
-  display: block;
-  width: 100vw;
-  height: 80vh;
+.products {
+  height: 100vh;
 }
