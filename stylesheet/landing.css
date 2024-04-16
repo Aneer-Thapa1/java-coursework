@@ -327,12 +327,12 @@ textarea {
 }
 
 footer {
-  padding-top: 30px;
   background: #000;
   margin-top: 50px;
   height: 300px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 footer img {
@@ -359,4 +359,17 @@ footer .icons {
   gap: 30px;
   display: flex;
   cursor: pointer;
+}
+
+footer .right {
+  display: flex;
+  height: 300px;
+  width: 200px;
+}
+
+footer .text {
+  display: flex;
+  width: 100px;
+  height: 200px;
+  flex-wrap: wrap;
 }
