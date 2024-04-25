@@ -193,6 +193,8 @@ nav ul li a:hover::after {
   align-items: center;
   background-color: #0a0a0a26;
   padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
 }
 
 .details {
@@ -218,6 +220,7 @@ nav ul li a:hover::after {
   gap: 10px;
   justify-content: center;
   align-items: center;
+  border-radius: 3px;
 }
 
 .about {

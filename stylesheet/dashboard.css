@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container-fluid {
+  padding: 30px;
+}
+
+h1 {
+  font-weight: 700;
+  color: #333;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: 500;
+  color: #333;
+}
+
+.card-text {
+  color: #777;
+}
+
+/* Overview Section */
+.overview-card {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.overview-card .card-title,
+.overview-card .card-text {
+  color: #fff;
+}
+
+/* Sales Trends */
+#salesChart {
+  height: 300px;
+}
+
+/* Top Products */
+.top-products-table th,
+.top-products-table td {
+  border-top: none !important;
+}
+
+.top-products-table th {
+  font-weight: 500;
+  color: #333;
+}
+
+.top-products-table td {
+  color: #777;
+}
+
+/* Recent Orders */
+.recent-orders-table th,
+.recent-orders-table td {
+  border-top: none !important;
+}
+
+.recent-orders-table th {
+  font-weight: 500;
+  color: #333;
+}
+
+.recent-orders-table td {
+  color: #777;
+}
+
+/* Customer Analytics */
+.customer-analytics-card {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.customer-analytics-card .card-title,
+.customer-analytics-card .card-text {
+  color: #fff;
+}
+
+/* Inventory */
+.inventory-table th,
+.inventory-table td {
+  border-top: none !important;
+}
+
+.inventory-table th {
+  font-weight: 500;
+  color: #333;
+}
+
+.inventory-table td {
+  color: #777;
+}

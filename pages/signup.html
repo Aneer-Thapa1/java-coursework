@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up Form</title>
+    <link rel="stylesheet" href="../stylesheet/signup.css" />
+</head>
+
+<body>
+    <main>
+        <div class="box">
+            <div class="inner-box">
+                <form action="index.html" autocomplete="off" class="sign-up-form">
+                    <div class="heading-signup">
+                        <h2>Get Started</h2>
+                    </div>
+
+                    <div class="actual-form">
+                        <div class="input-wrap">
+                            <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                            <label>Username</label>
+                        </div>
+
+                        <div class="input-wrap">
+                            <input type="email" class="input-field" autocomplete="off" required />
+                            <label>Email</label>
+                        </div>
+
+                        <div class="input-wrap">
+                            <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                            <label>Address</label>
+                        </div>
+
+                        <div class="input-wrap">
+                            <input type="tel" length="10" class="input-field" autocomplete="off" required
+                                pattern="[0-9]{10,}" />
+                            <label>Phone</label>
+                        </div>
+
+                        <div class="input-wrap">
+                            <input type="password" minlength="4" class="input-field" autocomplete="off" required />
+                            <label>Password</label>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="password" minlength="4" class="input-field" autocomplete="off" required />
+                            <label>Confirm Password</label>
+                        </div>
+
+                        <input type="submit" value="Sign Up" class="sign-btn" />
+
+                        <div class="text">
+                            <h6>Already have an account?</h6>
+                            <a href="login.html">Sign in</a>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="carousel">
+                    <div class="images-wrapper">
+                        <img src="../images/droneimg3.png" class="image img-1 show" alt="" />
+                        <img src="../images/drone5.png" class="image img-2" alt="" />
+                        <img src="../images/droneimg.png" class="image img-3" alt="" />
+                    </div>
+
+                    <div class="text-slider">
+                        <div class="text-wrap">
+                            <div class="text-group">
+                                <h2>Elevate Your Experience</h2>
+                                <h2>Reach New Heights!</h2>
+                                <h2>Explore Our Drones!</h2>
+                            </div>
+                        </div>
+
+                        <div class="bullets">
+                            <span class="active" data-value="1"></span>
+                            <span data-value="2"></span>
+                            <span data-value="3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Javascript file -->
+    <script src="app.js"></script>
+</body>
+
+</html>

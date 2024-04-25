@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.prod_desc {
+  display: flex;
+  padding: 4rem;
+  gap: 8rem;
+  height: 70vh;
+}
+
+.prod_desc img {
+  width: 600px;
+  height: 500px;
+}
+
+.prod_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prod_info p {
+  font-size: 22px;
+  font-weight: 550;
+}
+.prod_info h1 {
+  font-size: 2.8rem;
+}
+
+.speci {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.speci span {
+  font-size: 15px;
+}
+
+.speci span {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+}
+
+.speci span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: black;
+}
+.prod_btns {
+  display: flex;
+
+  /* justify-content: center; */
+  gap: 1.5rem;
+}
+.prod_btns button {
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.5s ease-in-out;
+  outline: none;
+  border: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}

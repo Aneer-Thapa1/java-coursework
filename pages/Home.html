@@ -13,9 +13,9 @@
 
 <body>
 
-    <nav id="navbar" class="navbar transparent">
+    <nav>
         <div class="logo">
-            <img src="../images/logo.png" alt="">
+            <img src="../images/whitelogo.png" alt="">
         </div>
 
         <div class="nav-items">
@@ -38,13 +38,72 @@
         <div class="overlay">
         </div>
         <video autoplay loop src="../images/bg-video.mov"></video>
+
+        <h1>Fly smarter, <br>
+            fly farther</h1>
     </section>
 
 
-    <section class="products"></section>
+    <section class="products">
+
+
+    </section>
 
 
 
+
+    <footer>
+        <div class="footer-left">
+            <img src="../images/whitelogo.png" alt="">
+            <p>Reach new heights!</p>
+
+        </div>
+
+        <div class="footer-right">
+            <div class="text">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">contact</a></li>
+                    <li><a href="">Collections</a></li>
+                    <li><a href="">About us</a></li>
+
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-skype"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+
+    </footer>
+
+
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const nav = document.querySelector('nav');
+            const logo = document.querySelector('.logo img');
+            const navItems = document.querySelectorAll('.nav-items a');
+            const shortcuts = document.querySelectorAll('.shortcuts i');
+
+            if (window.pageYOffset > 0) {
+                nav.style.backgroundColor = 'white';
+                navItems.forEach(item => item.style.color = 'black');
+                shortcuts.forEach(icon => icon.style.color = 'black');
+                logo.src = '../images/logo.png';
+            } else {
+                nav.style.backgroundColor = 'transparent';
+                navItems.forEach(item => item.style.color = 'white');
+                shortcuts.forEach(icon => icon.style.color = 'white');
+                logo.src = '../images/whitelogo.png';
+            }
+        });
+    </script>
 </body>
 
 </html>

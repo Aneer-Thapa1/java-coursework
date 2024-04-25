@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile {
+  display: flex;
+  padding: 4rem 8rem;
+  align-items: center;
+  border-radius: 6px;
+  width: fit-content;
+  margin: 2rem 4rem;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-left: none;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgb(4, 54, 140);
+}
+
+.p_side {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.edit {
+  height: 20px;
+  align-self: start;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+.recent_purchase {
+  padding: 0 4rem;
+
+  margin: 0 1rem;
+  width: 50%;
+}
+
+.detail p {
+  line-height: 36px;
+}
+
+.one_detail span {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.one_detail span:nth-child(1) {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.r_purchase {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.v_btn {
+  padding: 0.5rem;
+  background: black;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  border: none;
+}
+
+.v_btn:hover {
+  font-size: 14px;
+}
