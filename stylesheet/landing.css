@@ -335,6 +335,7 @@ footer {
   height: 300px;
   display: flex;
   justify-content: space-around;
+  gap: 90px;
   align-items: center;
 }
 
@@ -372,7 +373,6 @@ footer .right {
 
 footer .text {
   display: flex;
-  width: 100px;
-  height: 200px;
+
   flex-wrap: wrap;
 }
